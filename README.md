@@ -5,4 +5,4 @@ The paper introduces FILLER, a novel approach for automatically generating high�
 
 The process has three main stages: first, a fine‑tuning stage where a pre‑trained language model (CodeT5) is adapted using bi‑modal inputs that combine code snippets and textual descriptions across multiple programming languages; second, a self‑improvement stage where the model’s own predictions are fed back into training to reduce exposure bias and help it learn from its mistakes; and third, an inference stage that generates multiple candidate titles and applies a post‑ranking method (using TextRank) to select the most relevant and informative one.
 
-I've changing the post-ranking method from TextRank to MMR for better choosing among candidates.
+I've changing the post-ranking method from TextRank to MMR for better choosing among candidates. I've training the model for 3 epochs (their paper train for 8) in the self-improvement state and the result is quite an improvement. You can look at it and compare in the result.xlss 
